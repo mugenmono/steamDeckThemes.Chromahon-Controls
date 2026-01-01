@@ -1,8 +1,8 @@
 :root {
-    --capyInputs-grad-anim: capyInputs-Anim-grad-bg 4s infinite ease-in-out alternate;
+    --chromahonControls__grad-anim: chromahonControls__Anim-grad-bg 4s infinite ease-in-out alternate;
 }
 
-@keyframes capyInputs-Anim-grad-bg {
+@keyframes chromahonControls__Anim-grad-bg {
   0% {
     background-position: 0% 0%;
     background-size: 200% 200%;
@@ -26,12 +26,12 @@
 }
 
 .gamepaddialog_On_3ld7T>.gamepaddialog_ToggleRail_2JtC3 {
-    animation: var(--capyInputs-grad-anim);
+    animation: var(--chromahonControls__grad-anim);
 }
 
 .gamepadslider_SliderTrack_Mq25N::before {
-    animation: var(--capyInputs-grad-anim);
+    animation: var(--chromahonControls__grad-anim);
 }
 div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
-    animation: var(--capyInputs-grad-anim);
+    animation: var(--chromahonControls__grad-anim);
 }

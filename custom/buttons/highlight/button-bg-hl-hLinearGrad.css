@@ -1,7 +1,7 @@
 :root {
-    --capyInputs-button-bg-hl:
+    --chromahonControls__button-bg-hl:
         linear-gradient(to right,
-        var(--capyInputs-Custom-button-bg-hl-c1),
-        var(--capyInputs-Custom-button-bg-hl-c2),
-        var(--capyInputs-Custom-button-bg-hl-c3));
+        var(--chromahonControls__Custom-button-bg-hl-c1),
+        var(--chromahonControls__Custom-button-bg-hl-c2),
+        var(--chromahonControls__Custom-button-bg-hl-c3));
 }

@@ -1,5 +1,5 @@
 /* ---
-CapyInputs
+Chromahon (Input Controls)
 Sliders
 --- */
 
@@ -11,23 +11,23 @@ Sliders
     margin-top: -3.5px;
     z-index: 100;
     border-radius: 25px;
-    background: var(--capyInputs-slider-empty);
+    background: var(--chromahonControls__slider-empty);
     /*border: 2px solid red;*/
 }
 
 /* Tick active */
 div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
-    background: var(--capyInputs-slider-fill);
+    background: var(--chromahonControls__slider-fill);
 }
 
 /* Rail */
 .gamepadslider_SliderTrack_Mq25N {
-    background: var(--capyInputs-slider-empty);
+    background: var(--chromahonControls__slider-empty);
 }
 
 /* Rail filled */
 .gamepadslider_SliderTrack_Mq25N::before {
-    background: var(--capyInputs-slider-fill);
+    background: var(--chromahonControls__slider-fill);
 }
 /*
 ._2_vG6TwMW2XtyLlTEaODH9 {
@@ -40,7 +40,7 @@ div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
 }
 
 .gamepadslider_SliderHandle_2yVKj {
-    background: var(--capyInputs-slider-handle);
+    background: var(--chromahonControls__slider-handle);
     transition: transform .05s ease;
     box-shadow: none;
 }
@@ -48,7 +48,7 @@ div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
 .gamepaddialog_Field_S-_La.gpfocus .gamepadslider_SliderHandle_2yVKj,
 .gamepaddialog_Field_S-_La.gpfocuswithin .gamepadslider_SliderHandle_2yVKj {
     transform: scale(1.2);
-    box-shadow: 0 0 0 3px var(--capyInputs-slider-hl);
+    box-shadow: 0 0 0 3px var(--chromahonControls__slider-hl);
 }
 
 .gamepadslider_SliderNotchContainer_2N-a5 {
@@ -63,7 +63,7 @@ div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
     .P_NVQ7KUOfqYaa_SwWOpS.gpfocuswithin .gamepadslider_SliderTrack_Mq25N,*/
     .P_NVQ7KUOfqYaa_SwWOpS.gpfocus .gamepadslider_SliderHandle_2yVKj,
     .P_NVQ7KUOfqYaa_SwWOpS.gpfocuswithin .gamepadslider_SliderHandle_2yVKj {
-    box-shadow: 0 0 0 3px var(--capyInputs-slider-hl);
+    box-shadow: 0 0 0 3px var(--chromahonControls__slider-hl);
 }
 
 /* Focused */

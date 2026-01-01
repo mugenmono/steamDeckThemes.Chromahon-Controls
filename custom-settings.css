@@ -1,23 +1,23 @@
 /*
-CapyInputs
+Chromahon (Input Controls)
 Core Variables
 */
 
 :root {
     
-    --capyInputs-toggle-ON-handle: var(--capyInputs-Custom-toggle-ON-handle);
-    --capyInputs-toggle-ON-rail: var(--capyInputs-Custom-toggle-ON-rail);
-    --capyInputs-toggle-OFF-handle: var(--capyInputs-Custom-toggle-OFF-handle);
-    --capyInputs-toggle-OFF-rail: var(--capyInputs-Custom-toggle-OFF-rail);
+    --chromahonControls__toggle-ON-handle: var(--chromahonControls__Custom-toggle-ON-handle);
+    --chromahonControls__toggle-ON-rail: var(--chromahonControls__Custom-toggle-ON-rail);
+    --chromahonControls__toggle-OFF-handle: var(--chromahonControls__Custom-toggle-OFF-handle);
+    --chromahonControls__toggle-OFF-rail: var(--chromahonControls__Custom-toggle-OFF-rail);
 
-    --capyInputs-slider-fill: var(--capyInputs-Custom-slider-fill);
-    --capyInputs-slider-handle: var(--capyInputs-Custom-slider-handle);
-    --capyInputs-slider-empty: var(--capyInputs-Custom-slider-empty);
-    --capyInputs-slider-hl: var(--capyInputs-Custom-slider-hl);
+    --chromahonControls__slider-fill: var(--chromahonControls__Custom-slider-fill);
+    --chromahonControls__slider-handle: var(--chromahonControls__Custom-slider-handle);
+    --chromahonControls__slider-empty: var(--chromahonControls__Custom-slider-empty);
+    --chromahonControls__slider-hl: var(--chromahonControls__Custom-slider-hl);
 
     /* Note: checkboxes follow button scheme */
-    --capyInputs-button-bg: var(--capyInputs-Custom-button-bg);
-    --capyInputs-button-bg-hl: var(--capyInputs-Custom-button-bg-hl);
-    --capyInputs-button-fg: var(--capyInputs-Custom-button-fg);
-    --capyInputs-button-fg-hl: var(--capyInputs-Custom-button-fg-hl);
+    --chromahonControls__button-bg: var(--chromahonControls__Custom-button-bg);
+    --chromahonControls__button-bg-hl: var(--chromahonControls__Custom-button-bg-hl);
+    --chromahonControls__button-fg: var(--chromahonControls__Custom-button-fg);
+    --chromahonControls__button-fg-hl: var(--chromahonControls__Custom-button-fg-hl);
 }
