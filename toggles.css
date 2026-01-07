@@ -36,7 +36,7 @@ but for that redesign to completely work, e.g. when toggles are contained within
         transform: scale(0.8) translateX(0px) !important;
     }
     .gamepaddialog_Field_S-_La.gpfocuswithin .gamepaddialog_Toggle_24G4g.gpfocus:not(.gamepaddialog_Disabled_1pmyx) .gamepaddialog_ToggleSwitch_3__OD {
-        border: solid 3px var(--chromahonControls__Custom-toggle-OFF-rail);
+        border: solid 3px var(--chromahonControls__toggle-OFF-rail);
     }
 
     /* Unselected toggle, ON */

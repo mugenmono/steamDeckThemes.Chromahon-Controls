@@ -12,7 +12,6 @@ Sliders
     z-index: 100;
     border-radius: 25px;
     background: var(--chromahonControls__slider-empty);
-    /*border: 2px solid red;*/
 }
 
 /* Tick active */
@@ -29,10 +28,6 @@ div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
 .gamepadslider_SliderTrack_Mq25N::before {
     background: var(--chromahonControls__slider-fill);
 }
-/*
-._2_vG6TwMW2XtyLlTEaODH9 {
-    --left-track-color: red;
-}*/
 
 /* Handle */
 .gamepadslider_SliderHandleContainer_1pQZi {
@@ -56,13 +51,9 @@ div .u8QEaEpjqBM8RuPzRLjMy.j418S4TEV2LS3JHn6an4s {
 }
 
 /* Selected */
-/*.gamepaddialog_Field_S-_La.gpfocus .gamepadslider_SliderTrack_Mq25N,
-.gamepaddialog_Field_S-_La.gpfocuswithin .gamepadslider_SliderTrack_Mq25N,*/
 /* QAM -> soundtracks seekbar */
-    /*.P_NVQ7KUOfqYaa_SwWOpS.gpfocus .gamepadslider_SliderTrack_Mq25N,
-    .P_NVQ7KUOfqYaa_SwWOpS.gpfocuswithin .gamepadslider_SliderTrack_Mq25N,*/
-    .P_NVQ7KUOfqYaa_SwWOpS.gpfocus .gamepadslider_SliderHandle_2yVKj,
-    .P_NVQ7KUOfqYaa_SwWOpS.gpfocuswithin .gamepadslider_SliderHandle_2yVKj {
+.P_NVQ7KUOfqYaa_SwWOpS.gpfocus .gamepadslider_SliderHandle_2yVKj,
+.P_NVQ7KUOfqYaa_SwWOpS.gpfocuswithin .gamepadslider_SliderHandle_2yVKj {
     box-shadow: 0 0 0 3px var(--chromahonControls__slider-hl);
 }
 

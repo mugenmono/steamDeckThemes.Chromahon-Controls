@@ -1,7 +1,0 @@
-:root {
-    --chromahonControls__slider-fill:
-        linear-gradient(to right,
-        var(--chromahonControls__Custom-slider-fill-c1),
-        var(--chromahonControls__Custom-slider-fill-c2),
-        var(--chromahonControls__Custom-slider-fill-c3));
-}

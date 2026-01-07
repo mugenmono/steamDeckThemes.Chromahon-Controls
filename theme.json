@@ -16,8 +16,7 @@
     "inject": {
         "toggles.css": [],
         "buttons.css": [],
-        "sliders.css": [],
-        "custom-settings.css": []
+        "sliders.css": []
     },
     "patches": {
         "➤ Global Settings": {
@@ -26,12 +25,12 @@
                 "_": {}
             }
         },
-        "My Color Scheme is rather Light (settings auto-adjustment; may not yield visible results)": {
+        "Light Scheme Adjustments": {
             "type": "checkbox",
             "default": "No",
             "values": {
                 "Yes": {
-                    "tweaks/isLight.css": []
+                    "opt/schemeIsLight.css": []
                 },
                 "No": {}
             }
@@ -41,7 +40,7 @@
             "default": "Yes",
             "values": {
                 "Yes": {
-                    "tweaks/toggle-anim-HandleEnable.css": []
+                    "opt/toggles_anim-handle.css": []
                 },
                 "No": {}
             }
@@ -51,7 +50,7 @@
             "default": "No",
             "values": {
                 "Yes": {
-                    "tweaks/toggle-slider-anim-Grad.css": []
+                    "opt/toggles_sliders_anim-grad.css": []
                 },
                 "No": {}
             }
@@ -61,7 +60,7 @@
             "default": "No",
             "values": {
                 "Yes": {
-                    "tweaks/toggle-noRound.css": []
+                    "opt/toggles_non-round.css": []
                 },
                 "No": {}
             }
@@ -71,7 +70,7 @@
             "default": "No",
             "values": {
                 "Yes": {
-                    "tweaks/slider-noRound.css": []
+                    "opt/sliders_non-round.css": []
                 },
                 "No": {}
             }
@@ -88,10 +87,10 @@
             "values": {
                 "Solid Color": {},
                 "H-Linear Grad": {
-                    "custom/toggles/toggle-ON-rail-hLinearGrad.css": []
+                    "parts/toggles/ON_hLinearGrad.css": []
                 },
                 "V-Linear Grad": {
-                    "custom/toggles/toggle-ON-rail-vLinearGrad.css": []
+                    "parts/toggles/ON_vLinearGrad.css": []
                 }
         },
         "components": [
@@ -100,7 +99,7 @@
                 "type": "color-picker",
                 "on": "Solid Color",
                 "default": "#50eb79",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail",
+                "css_variable": "--chromahonControls__toggle-ON-rail",
                 "tabs": []
             },
             {
@@ -108,7 +107,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#ccdb76",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail-c1",
+                "css_variable": "--chromahonControls__toggle-ON-rail-c1",
                 "tabs": []
             },
             {
@@ -116,7 +115,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#76dbda",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail-c2",
+                "css_variable": "--chromahonControls__toggle-ON-rail-c2",
                 "tabs": []
             },
             {
@@ -124,7 +123,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#db7689",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail-c3",
+                "css_variable": "--chromahonControls__toggle-ON-rail-c3",
                 "tabs": []
             },
             {
@@ -132,7 +131,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#eb506f",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail-c1",
+                "css_variable": "--chromahonControls__toggle-ON-rail-c1",
                 "tabs": []
             },
             {
@@ -140,7 +139,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#50eb79",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail-c2",
+                "css_variable": "--chromahonControls__toggle-ON-rail-c2",
                 "tabs": []
             },
             {
@@ -148,7 +147,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#50baeb",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-rail-c3",
+                "css_variable": "--chromahonControls__toggle-ON-rail-c3",
                 "tabs": []
             }
         ]
@@ -164,7 +163,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#fff",
-                "css_variable": "--chromahonControls__Custom-toggle-ON-handle",
+                "css_variable": "--chromahonControls__toggle-ON-handle",
                 "tabs": []
             }
         ]
@@ -180,7 +179,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#292929",
-                "css_variable": "--chromahonControls__Custom-toggle-OFF-rail",
+                "css_variable": "--chromahonControls__toggle-OFF-rail",
                 "tabs": []
             }
         ]
@@ -196,7 +195,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#363636",
-                "css_variable": "--chromahonControls__Custom-toggle-OFF-handle",
+                "css_variable": "--chromahonControls__toggle-OFF-handle",
                 "tabs": []
             }
         ]
@@ -213,7 +212,7 @@
             "values": {
                 "Solid Color": {},
                 "Gradient": {
-                    "custom/sliders/slider-fill-hLinearGrad.css": []
+                    "parts/sliders/fill_hLinearGrad.css": []
                 }
         },
         "components": [
@@ -222,7 +221,7 @@
                 "type": "color-picker",
                 "on": "Solid Color",
                 "default": "#50eb79",
-                "css_variable": "--chromahonControls__Custom-slider-fill",
+                "css_variable": "--chromahonControls__slider-fill",
                 "tabs": []
             },
             {
@@ -230,7 +229,7 @@
                 "type": "color-picker",
                 "on": "Gradient",
                 "default": "#ccdb76",
-                "css_variable": "--chromahonControls__Custom-slider-fill-c1",
+                "css_variable": "--chromahonControls__slider-fill-c1",
                 "tabs": []
             },
             {
@@ -238,7 +237,7 @@
                 "type": "color-picker",
                 "on": "Gradient",
                 "default": "#76dbda",
-                "css_variable": "--chromahonControls__Custom-slider-fill-c2",
+                "css_variable": "--chromahonControls__slider-fill-c2",
                 "tabs": []
             },
             {
@@ -246,7 +245,7 @@
                 "type": "color-picker",
                 "on": "Gradient",
                 "default": "#db7689",
-                "css_variable": "--chromahonControls__Custom-slider-fill-c3",
+                "css_variable": "--chromahonControls__slider-fill-c3",
                 "tabs": []
             }
         ]
@@ -262,7 +261,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#ffffff4D",
-                "css_variable": "chromahonControls__Custom-slider-empty",
+                "css_variable": "--chromahonControls__slider-empty",
                 "tabs": []
             }
         ]
@@ -278,7 +277,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#fff",
-                "css_variable": "chromahonControls__Custom-slider-handle",
+                "css_variable": "--chromahonControls__slider-handle",
                 "tabs": []
             }
         ]
@@ -294,7 +293,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#ffffff4D",
-                "css_variable": "chromahonControls__Custom-slider-hl",
+                "css_variable": "--chromahonControls__slider-hl",
                 "tabs": []
             }
         ]
@@ -311,16 +310,16 @@
             "values": {
                 "None": {},
                 "Faint Outline": {
-                    "custom/buttons/button-Type-faintOutline.css": []
+                    "parts/buttons/decoration_faintOutline.css": []
                 },
                 "Outline": {
-                    "custom/buttons/button-Type-outline.css": []
+                    "parts/buttons/decoration_outline.css": []
                 },
                 "Bottom Line": {
-                    "custom/buttons/button-Type-bottomLine.css": []
+                    "parts/buttons/decoration_bottomLine.css": []
                 },
                 "Solid Shadow": {
-                    "custom/buttons/button-Type-solidShadow.css": []
+                    "parts/buttons/decoration_solidShadow.css": []
                 }
             }
         },
@@ -330,19 +329,19 @@
             "values": {
                 "Solid Color": {},
                 "H-Linear Grad": {
-                    "custom/buttons/button-bg-hLinearGrad.css": []
+                    "parts/buttons/bg_hLinearGrad.css": []
                 },
                 "V-Linear Grad": {
-                    "custom/buttons/button-bg-vLinearGrad.css": []
+                    "parts/buttons/bg_vLinearGrad.css": []
                 },
                 "Radial Grad": {
-                    "custom/buttons/button-bg-radialGrad.css": []
+                    "parts/buttons/bg_radialGrad.css": []
                 },
                 "Stripes": {
-                    "custom/buttons/button-bg-stripes.css": []
+                    "parts/buttons/bg_stripes.css": []
                 },
                 "Cutoff": {
-                    "custom/buttons/button-bg-cutoff.css": []
+                    "parts/buttons/bg_cutoff.css": []
                 }
         },
         "components": [
@@ -351,7 +350,7 @@
                 "type": "color-picker",
                 "on": "Solid Color",
                 "default": "#161616",
-                "css_variable": "--chromahonControls__Custom-button-bg",
+                "css_variable": "--chromahonControls__button-bg",
                 "tabs": []
             },
             {
@@ -359,7 +358,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-c1",
+                "css_variable": "--chromahonControls__button-bg-c1",
                 "tabs": []
             },
             {
@@ -367,7 +366,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-c2",
+                "css_variable": "--chromahonControls__button-bg-c2",
                 "tabs": []
             },
             {
@@ -375,7 +374,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-c3",
+                "css_variable": "--chromahonControls__button-bg-c3",
                 "tabs": []
             },
             {
@@ -383,7 +382,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-c1",
+                "css_variable": "--chromahonControls__button-bg-c1",
                 "tabs": []
             },
             {
@@ -391,7 +390,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-c2",
+                "css_variable": "--chromahonControls__button-bg-c2",
                 "tabs": []
             },
             {
@@ -399,7 +398,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-c3",
+                "css_variable": "--chromahonControls__button-bg-c3",
                 "tabs": []
             },
             {
@@ -407,7 +406,7 @@
                 "type": "color-picker",
                 "on": "Radial Grad",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-c1",
+                "css_variable": "--chromahonControls__button-bg-c1",
                 "tabs": []
             },
             {
@@ -415,7 +414,7 @@
                 "type": "color-picker",
                 "on": "Radial Grad",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-c2",
+                "css_variable": "--chromahonControls__button-bg-c2",
                 "tabs": []
             },
             {
@@ -423,7 +422,7 @@
                 "type": "color-picker",
                 "on": "Stripes",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-c1",
+                "css_variable": "--chromahonControls__button-bg-c1",
                 "tabs": []
             },
             {
@@ -431,7 +430,7 @@
                 "type": "color-picker",
                 "on": "Stripes",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-c2",
+                "css_variable": "--chromahonControls__button-bg-c2",
                 "tabs": []
             },
             {
@@ -439,7 +438,7 @@
                 "type": "color-picker",
                 "on": "Stripes",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-c3",
+                "css_variable": "--chromahonControls__button-bg-c3",
                 "tabs": []
             },
             {
@@ -447,7 +446,7 @@
                 "type": "color-picker",
                 "on": "Cutoff",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-c1",
+                "css_variable": "--chromahonControls__button-bg-c1",
                 "tabs": []
             },
             {
@@ -455,7 +454,7 @@
                 "type": "color-picker",
                 "on": "Cutoff",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-c2",
+                "css_variable": "--chromahonControls__button-bg-c2",
                 "tabs": []
             },
             {
@@ -463,7 +462,7 @@
                 "type": "color-picker",
                 "on": "Cutoff",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-c3",
+                "css_variable": "--chromahonControls__button-bg-c3",
                 "tabs": []
             }
         ]
@@ -479,7 +478,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#ccc",
-                "css_variable": "chromahonControls__Custom-button-fg",
+                "css_variable": "--chromahonControls__button-fg",
                 "tabs": []
             }
         ]
@@ -490,19 +489,19 @@
             "values": {
                 "Solid Color": {},
                 "H-Linear Grad": {
-                    "custom/buttons/highlight/button-bg-hl-hLinearGrad.css": []
+                    "parts/buttons/highlight/bg_hLinearGrad.css": []
                 },
                 "V-Linear Grad": {
-                    "custom/buttons/highlight/button-bg-hl-vLinearGrad.css": []
+                    "parts/buttons/highlight/bg_vLinearGrad.css": []
                 },
                 "Radial Grad": {
-                    "custom/buttons/highlight/button-bg-hl-radialGrad.css": []
+                    "parts/buttons/highlight/bg_radialGrad.css": []
                 },
                 "Stripes": {
-                    "custom/buttons/highlight/button-bg-hl-stripes.css": []
+                    "parts/buttons/highlight/bg_stripes.css": []
                 },
                 "Cutoff": {
-                    "custom/buttons/highlight/button-bg-hl-cutoff.css": []
+                    "parts/buttons/highlight/bg_cutoff.css": []
                 }
         },
         "components": [
@@ -511,7 +510,7 @@
                 "type": "color-picker",
                 "on": "Solid Color",
                 "default": "#d6d6d6",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl",
+                "css_variable": "--chromahonControls__button-bg-hl",
                 "tabs": []
             },
             {
@@ -519,7 +518,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c1",
+                "css_variable": "--chromahonControls__button-bg-hl-c1",
                 "tabs": []
             },
             {
@@ -527,7 +526,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c2",
+                "css_variable": "--chromahonControls__button-bg-hl-c2",
                 "tabs": []
             },
             {
@@ -535,7 +534,7 @@
                 "type": "color-picker",
                 "on": "H-Linear Grad",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c3",
+                "css_variable": "--chromahonControls__button-bg-hl-c3",
                 "tabs": []
             },
             {
@@ -543,7 +542,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c1",
+                "css_variable": "--chromahonControls__button-bg-hl-c1",
                 "tabs": []
             },
             {
@@ -551,7 +550,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c2",
+                "css_variable": "--chromahonControls__button-bg-hl-c2",
                 "tabs": []
             },
             {
@@ -559,7 +558,7 @@
                 "type": "color-picker",
                 "on": "V-Linear Grad",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c3",
+                "css_variable": "--chromahonControls__button-bg-hl-c3",
                 "tabs": []
             },
             {
@@ -567,7 +566,7 @@
                 "type": "color-picker",
                 "on": "Radial Grad",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c1",
+                "css_variable": "--chromahonControls__button-bg-hl-c1",
                 "tabs": []
             },
             {
@@ -575,7 +574,7 @@
                 "type": "color-picker",
                 "on": "Radial Grad",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c2",
+                "css_variable": "--chromahonControls__button-bg-hl-c2",
                 "tabs": []
             },
             {
@@ -583,7 +582,7 @@
                 "type": "color-picker",
                 "on": "Stripes",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c1",
+                "css_variable": "--chromahonControls__button-bg-hl-c1",
                 "tabs": []
             },
             {
@@ -591,7 +590,7 @@
                 "type": "color-picker",
                 "on": "Stripes",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c2",
+                "css_variable": "--chromahonControls__button-bg-hl-c2",
                 "tabs": []
             },
             {
@@ -599,7 +598,7 @@
                 "type": "color-picker",
                 "on": "Stripes",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c3",
+                "css_variable": "--chromahonControls__button-bg-hl-c3",
                 "tabs": []
             },
             {
@@ -607,7 +606,7 @@
                 "type": "color-picker",
                 "on": "Cutoff",
                 "default": "#14af90",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c1",
+                "css_variable": "--chromahonControls__button-bg-hl-c1",
                 "tabs": []
             },
             {
@@ -615,7 +614,7 @@
                 "type": "color-picker",
                 "on": "Cutoff",
                 "default": "#af1486",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c2",
+                "css_variable": "--chromahonControls__button-bg-hl-c2",
                 "tabs": []
             },
             {
@@ -623,7 +622,7 @@
                 "type": "color-picker",
                 "on": "Cutoff",
                 "default": "#af4514",
-                "css_variable": "--chromahonControls__Custom-button-bg-hl-c3",
+                "css_variable": "--chromahonControls__button-bg-hl-c3",
                 "tabs": []
             }
         ]
@@ -639,7 +638,7 @@
                 "type": "color-picker",
                 "on": "_",
                 "default": "#121212",
-                "css_variable": "chromahonControls__Custom-button-fg-hl",
+                "css_variable": "--chromahonControls__button-fg-hl",
                 "tabs": []
             }
         ]

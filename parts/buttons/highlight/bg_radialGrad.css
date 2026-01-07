@@ -1,9 +1,5 @@
 :root {
-    --chromahonControls__button-bg-hl:
-        linear-gradient(to top,
-        var(--chromahonControls__Custom-button-bg-hl-c1),
-        var(--chromahonControls__Custom-button-bg-hl-c2),
-        var(--chromahonControls__Custom-button-bg-hl-c3));
+    --chromahonControls__button-bg-hl: radial-gradient(circle at top -155px left 35px, var(--chromahonControls__button-bg-hl-c1) 0% 30%, var(--chromahonControls__button-bg-hl-c2) 70% 100%);
 }
 
     button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover:active {
