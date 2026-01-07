@@ -10,3 +10,15 @@ button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.
 .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton.gpfocus {
     border-bottom: 2px solid var(--chromahonControls__button-fg-hl);
 }
+
+/* ---
+Present in Steam Menu Only
+--- */
+
+/* Controller settings > 'Controller settings' Button */
+._2H5S67B87P-E-gIGLnerOf ._1T2RsCEMP1dxEe5SbHzxlL {
+    border-bottom: 2px solid var(--chromahonControls__button-fg);
+}
+._2H5S67B87P-E-gIGLnerOf ._1T2RsCEMP1dxEe5SbHzxlL.gpfocus {
+    border-bottom: 2px solid var(--chromahonControls__button-fg-hl);
+}

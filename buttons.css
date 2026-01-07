@@ -3,6 +3,10 @@ Chromahon (Input Controls)
 Buttons, Dropdowns
 --- */
 
+/* ---
+Present in either QAM, Steam Menu, or both
+--- */
+
     /* button */
     button.cXzBZxhPBl7fZs9LODEnc.DialogButton, button.cXzBZxhPBl7fZs9LODEnc.DialogButton.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.Primary {
         background: var(--chromahonControls__button-bg);
@@ -67,20 +71,32 @@ Buttons, Dropdowns
         fill: var(--chromahonControls__button-fg-hl) !important;
     }
 
+    /* Checkboxes */
+
+    .DialogCheckbox {
+        background: var(--chromahonControls__button-bg);
+        box-shadow: none;
+    }
+    .DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+        background: var(--chromahonControls__button-bg-hl);
+    }
+    .DialogCheckbox path {
+        stroke: var(--chromahonControls__button-fg);
+    }
+    .DialogCheckbox_Container:focus .DialogCheckbox path {
+        stroke: var(--chromahonControls__button-fg-hl);
+    }
+
 /* ---
-Checkboxes
+Present in Steam Menu Only
 --- */
 
-.DialogCheckbox {
-    background: var(--chromahonControls__button-bg);
-    box-shadow: none;
-}
-.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
-    background: var(--chromahonControls__button-bg-hl);
-}
-.DialogCheckbox path {
-    stroke: var(--chromahonControls__button-fg);
-}
-.DialogCheckbox_Container:focus .DialogCheckbox path {
-    stroke: var(--chromahonControls__button-fg-hl);
-}
+    /* Controller settings > 'Controller settings' Button */
+    ._2H5S67B87P-E-gIGLnerOf ._1T2RsCEMP1dxEe5SbHzxlL {
+        background: var(--chromahonControls__button-bg);
+        color: var(--chromahonControls__button-fg);
+    }
+    ._2H5S67B87P-E-gIGLnerOf ._1T2RsCEMP1dxEe5SbHzxlL.gpfocus {
+        background: var(--chromahonControls__button-bg-hl);
+        color: var(--chromahonControls__button-fg-hl);
+    }

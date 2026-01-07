@@ -5,18 +5,15 @@
     "version": "v0.5.0",
     "manifest_version": 9,
     "tabs": {
-        "all": ["bigpicture", "QuickAccess", "MainMenu"],
-        "bpm": ["bigpicture"],
-        "qam": ["QuickAccess"],
-        "mm": ["MainMenu"],
+        "sm": ["MainMenu"],
         "both": ["MainMenu", "QuickAccess"],
-
-        "default": ["qam"]
+        "default": ["both"]
     },
     "inject": {
         "toggles.css": [],
         "buttons.css": [],
-        "sliders.css": []
+        "sliders.css": [],
+        "text-inputs.css": []
     },
     "patches": {
         "➤ Global Settings": {
@@ -642,6 +639,291 @@
                 "tabs": []
             }
         ]
+        },
+        "➤ Text Inputs": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "Text Input Decoration": {
+            "type": "slider",
+            "default": "Underline",
+            "values": {
+                "None": {},
+                "Outline": {
+                    "parts/textInput/decoration_outline.css": []
+                },
+                "Underline": {
+                    "parts/textInput/decoration_underline.css": []
+                }
+            }
+        },
+        "Text Input Background": {
+            "type": "slider",
+            "default": "Solid Color",
+            "values": {
+                "Solid Color": {},
+                "H-Linear Grad": {
+                    "parts/textInput/bg_hLinearGrad.css": []
+                },
+                "V-Linear Grad": {
+                    "parts/textInput/bg_vLinearGrad.css": []
+                },
+                "Radial Grad": {
+                    "parts/textInput/bg_radialGrad.css": []
+                },
+                "Stripes": {
+                    "parts/textInput/bg_stripes.css": []
+                }
+            },
+            "components": [
+                {
+                    "name": "Color",
+                    "type": "color-picker",
+                    "on": "Solid Color",
+                    "default": "#161616",
+                    "css_variable": "--chromahonControls__textInput-bg",
+                    "tabs": []
+                },
+                {
+                    "name": "H-Linear Grad 1",
+                    "type": "color-picker",
+                    "on": "H-Linear Grad",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "H-Linear Grad 2",
+                    "type": "color-picker",
+                    "on": "H-Linear Grad",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "H-Linear Grad 3",
+                    "type": "color-picker",
+                    "on": "H-Linear Grad",
+                    "default": "#af4514",
+                    "css_variable": "--chromahonControls__textInput-bg-c3",
+                    "tabs": []
+                },
+                {
+                    "name": "V-Linear Grad 1",
+                    "type": "color-picker",
+                    "on": "V-Linear Grad",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "V-Linear Grad 2",
+                    "type": "color-picker",
+                    "on": "V-Linear Grad",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "V-Linear Grad 3",
+                    "type": "color-picker",
+                    "on": "V-Linear Grad",
+                    "default": "#af4514",
+                    "css_variable": "--chromahonControls__textInput-bg-c3",
+                    "tabs": []
+                },
+                {
+                    "name": "Radial Grad 1",
+                    "type": "color-picker",
+                    "on": "Radial Grad",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "Radial Grad 2",
+                    "type": "color-picker",
+                    "on": "Radial Grad",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "Stripes 1",
+                    "type": "color-picker",
+                    "on": "Stripes",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "Stripes 2",
+                    "type": "color-picker",
+                    "on": "Stripes",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "Stripes 3",
+                    "type": "color-picker",
+                    "on": "Stripes",
+                    "default": "#af4514",
+                    "css_variable": "--chromahonControls__textInput-bg-c3",
+                    "tabs": []
+                }
+            ]
+        },
+        "Text Input Foreground": {
+            "type": "none",
+            "values": {
+                "_": {}
+            },
+            "components": [
+                {
+                    "name": "Color",
+                    "type": "color-picker",
+                    "on": "_",
+                    "default": "#ccc",
+                    "css_variable": "--chromahonControls__textInput-fg",
+                    "tabs": []
+                }
+            ]
+        },
+        "Text Input Highlight Background": {
+            "type": "slider",
+            "default": "Solid Color",
+            "values": {
+                "Solid Color": {},
+                "H-Linear Grad": {
+                    "parts/textInput/highlight/bg_hLinearGrad.css": []
+                },
+                "V-Linear Grad": {
+                    "parts/textInput/highlight/bg_vLinearGrad.css": []
+                },
+                "Radial Grad": {
+                    "parts/textInput/highlight/bg_radialGrad.css": []
+                },
+                "Stripes": {
+                    "parts/textInput/highlight/bg_stripes.css": []
+                }
+            },
+            "components": [
+                {
+                    "name": "Color",
+                    "type": "color-picker",
+                    "on": "Solid Color",
+                    "default": "#d6d6d6",
+                    "css_variable": "--chromahonControls__textInput-bg-hl",
+                    "tabs": []
+                },
+                {
+                    "name": "H-Linear Grad 1",
+                    "type": "color-picker",
+                    "on": "H-Linear Grad",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "H-Linear Grad 2",
+                    "type": "color-picker",
+                    "on": "H-Linear Grad",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "H-Linear Grad 3",
+                    "type": "color-picker",
+                    "on": "H-Linear Grad",
+                    "default": "#af4514",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c3",
+                    "tabs": []
+                },
+                {
+                    "name": "V-Linear Grad 1",
+                    "type": "color-picker",
+                    "on": "V-Linear Grad",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "V-Linear Grad 2",
+                    "type": "color-picker",
+                    "on": "V-Linear Grad",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "V-Linear Grad 3",
+                    "type": "color-picker",
+                    "on": "V-Linear Grad",
+                    "default": "#af4514",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c3",
+                    "tabs": []
+                },
+                {
+                    "name": "Radial Grad 1",
+                    "type": "color-picker",
+                    "on": "Radial Grad",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "Radial Grad 2",
+                    "type": "color-picker",
+                    "on": "Radial Grad",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "Stripes 1",
+                    "type": "color-picker",
+                    "on": "Stripes",
+                    "default": "#14af90",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c1",
+                    "tabs": []
+                },
+                {
+                    "name": "Stripes 2",
+                    "type": "color-picker",
+                    "on": "Stripes",
+                    "default": "#af1486",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c2",
+                    "tabs": []
+                },
+                {
+                    "name": "Stripes 3",
+                    "type": "color-picker",
+                    "on": "Stripes",
+                    "default": "#af4514",
+                    "css_variable": "--chromahonControls__textInput-bg-hl-c3",
+                    "tabs": []
+                }
+            ]
+        },
+        "Text Input Highlight Foreground": {
+            "type": "none",
+            "values": {
+                "_": {}
+            },
+            "components": [
+                {
+                    "name": "Color",
+                    "type": "color-picker",
+                    "on": "_",
+                    "default": "#121212",
+                    "css_variable": "--chromahonControls__textInput-fg-hl",
+                    "tabs": []
+                }
+            ]
         }
     }
 }
