@@ -4,10 +4,10 @@ Buttons, Dropdowns
 --- */
 
 /* ---
-Present in either QAM, Steam Menu, or both
+Shared Elements between QA & Steam Menus
 --- */
 
-    /* button */
+    /* buttons & dropdowns */
     button.cXzBZxhPBl7fZs9LODEnc.DialogButton, button.cXzBZxhPBl7fZs9LODEnc.DialogButton.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.Primary {
         background: var(--chromahonControls__button-bg);
     }
@@ -18,27 +18,19 @@ Present in either QAM, Steam Menu, or both
         background: var(--chromahonControls__button-bg-hl);
         color: var(--chromahonControls__button-fg-hl);
     }
-    /* friends page -> header buttons */
-    .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton {
-        background: var(--chromahonControls__button-bg);
-        color: var(--chromahonControls__button-fg);
-        padding: 4px 8px 4px 8px;
-    }
-    .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton.gpfocus {
-        background: var(--chromahonControls__button-bg-hl);
-        color: var(--chromahonControls__button-fg-hl);
-    }
+    
+    /* extended dropdowns e.g. Settings -> General -> Timezone */
     ._2fl-TfpJcuSi88OkNwGOCb,
     ._3g-QHB82IGz91Hsk1Hw4lh,
     .cbinvNOoQE045ZV5gCk_N {
         color: var(--chromahonControls__button-fg);
     }
-    /* extended dropdowns e.g. Settings -> General -> Timezone */
     .gpfocus ._2fl-TfpJcuSi88OkNwGOCb,
     .gpfocus ._3g-QHB82IGz91Hsk1Hw4lh,
     .gpfocus .cbinvNOoQE045ZV5gCk_N {
         color: var(--chromahonControls__button-fg-hl);
     }
+
     /* "special" buttons */
     button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover:active.Primary {
         background: var(--chromahonControls__button-fg-hl);
@@ -52,6 +44,36 @@ Present in either QAM, Steam Menu, or both
     /* remove box-shadow highlight */
     .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus, .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.gpfocus, .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.gpfocus, .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.gpfocus {
         box-shadow: none;
+    }
+
+    /* checkboxes */
+    .DialogCheckbox {
+        background: var(--chromahonControls__button-bg);
+        box-shadow: none;
+    }
+    .DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+        background: var(--chromahonControls__button-bg-hl);
+    }
+    .DialogCheckbox path {
+        stroke: var(--chromahonControls__button-fg);
+    }
+    .DialogCheckbox_Container:focus .DialogCheckbox path {
+        stroke: var(--chromahonControls__button-fg-hl);
+    }
+
+/* ---
+Exclusive to QAM
+--- */
+
+    /* friends page -> header buttons */
+    .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton {
+        background: var(--chromahonControls__button-bg);
+        color: var(--chromahonControls__button-fg);
+        padding: 4px 8px 4px 8px;
+    }
+    .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton.gpfocus {
+        background: var(--chromahonControls__button-bg-hl);
+        color: var(--chromahonControls__button-fg-hl);
     }
 
     /* soundtracks page -> controls */
@@ -71,24 +93,8 @@ Present in either QAM, Steam Menu, or both
         fill: var(--chromahonControls__button-fg-hl) !important;
     }
 
-    /* Checkboxes */
-
-    .DialogCheckbox {
-        background: var(--chromahonControls__button-bg);
-        box-shadow: none;
-    }
-    .DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
-        background: var(--chromahonControls__button-bg-hl);
-    }
-    .DialogCheckbox path {
-        stroke: var(--chromahonControls__button-fg);
-    }
-    .DialogCheckbox_Container:focus .DialogCheckbox path {
-        stroke: var(--chromahonControls__button-fg-hl);
-    }
-
 /* ---
-Present in Steam Menu Only
+Exclusive to Steam Menu
 --- */
 
     /* Controller settings > 'Controller settings' Button */
