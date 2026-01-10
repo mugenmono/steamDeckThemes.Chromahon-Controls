@@ -34,13 +34,19 @@
             }
         },
         "Gradient Animations (Limited to Toggles & Sliders)": {
-            "type": "checkbox",
-            "default": "No",
+            "type": "dropdown",
+            "default": "Disabled",
             "values": {
-                "Yes": {
-                    "opt/toggles_sliders_anim-grad.css": ["both"]
+                "Disabled": {},
+                "Apply to Quick Access Menu": {
+                    "opt/toggles_sliders_anim-grad.css": []
                 },
-                "No": {}
+                "Apply to Steam Menu": {
+                    "opt/toggles_sliders_anim-grad.css": ["sm"]
+                },
+                "Apply to both menus": {
+                    "opt/toggles_sliders_anim-grad.css": ["both"]
+                }
             }
         },
         "➤ Quick Access Menu": {
