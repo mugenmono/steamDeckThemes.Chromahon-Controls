@@ -1,0 +1,1 @@
+[Chromahon migrated to Codeberg](https://codeberg.org/mugen/Chromahon). GitHub repositories will no longer receive updates.
